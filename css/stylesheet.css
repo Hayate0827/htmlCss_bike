@@ -1,0 +1,809 @@
+@charset "utf-8";
+/* タグ */
+html {
+  width: 100%;
+  height: 100%;
+  color: #6F6E6E;
+  font-size: 18px;
+  font-family: "メイリオ", "Meiryo", "Hiragino Sans", "ヒラギノ角ゴ Pro W4", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif !important;
+  word-wrap: break-word;
+}
+body {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow-x: hidden;
+  color: #6F6E6E;
+  font-family: "メイリオ";
+  background-color: white;
+}
+h1, h2, h3, h4, h5 {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  height: auto;
+}
+ul {
+  margin-block-end: 0em;
+  padding-inline-start: 0px;
+}
+a, a:hover, a:active {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+.flex_box {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flex_align_start {
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.flex_align_stretch  { -webkit-align-items: stretch; -ms-flex-align: stretch; align-items: stretch;}
+.flex_align_center   { -webkit-align-items: center; -ms-flex-align: center; align-items: center;}
+.flex_align_end      { -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end;}
+.flex_space_between  { -webkit-justify-content: space-between; justify-content: space-between; -ms-flex-pack: justify;}
+.flex_content_center { -webkit-justify-content: center; justify-content: center; -ms-flex-pack: center;}
+.flex_content_end    { -webkit-justify-content: flex-end; justify-content: flex-end; -ms-flex-pack: end;}
+.flex_content_around { -webkit-justify-content: space-around; justify-content: space-around; -ms-flex-pack: distribute;}
+.flex_container_wrap { -webkit-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-wrap: wrap;}
+.full-width {
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+/* main */
+/* main */
+/* main */
+/* main */
+/* main */
+.contents_wrapper {
+  width: 100%;
+}
+.bG_color_slide {
+  background-color: black;
+}
+.bG_color_area_shop_appeal {
+  background-color: #E3E2E0;
+}
+.bG_color_area_images {
+  background-color: #F7F6F4;
+}
+.bG_color_area_bike_detal {
+  background-color: white;
+}
+.bG_color_area_shop_comment {
+  background-color: #F7F6F4;
+}
+.contents_wrapper .contents {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.bodyInner{
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+header .header_main {
+  padding: 26px 40px;
+  background-color: #171721;
+}
+.header_main .item_wrap input.search_box {
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-radius: 5px ;
+  color: white;
+  text-indent: 30px;
+  background: linear-gradient(to top, #505050 0%, #1E1E1E 100%, #505050 100%);
+}
+.header_main .item_wrap {
+  position: relative;
+  max-width: 300px;
+  margin: 0 0 0 auto;
+}
+.header_main .item_wrap img{
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 10px;
+}
+.header_main h1 {
+  max-width: 241px;
+  margin-right: 40px;
+}
+header div.menu_bar {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  padding-left: 3.2%;
+  /* padding-left: 40px; */
+  border-bottom: 2px solid black;
+  vertical-align: middle;
+  background: rgb(60,65,80);
+  background: linear-gradient(0deg, black 0%, rgba(60,65,80,1) 100%);
+}
+header div.menu_bar::after{
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  border-bottom: solid 1px #707070;
+  content: "";
+}
+.menu_bar .menu_page {
+  position: relative;
+  width: 53px;
+  height: 100%;
+  border-left: solid 1px #707070;
+  text-align: center;
+  font-size: 12px;
+  vertical-align: middle;
+}
+.menu_bar .menu_page::after{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  border-left: solid 1px black;
+  content: "";
+}
+.menu_bar .menu_page:last-of-type {
+  border-right: solid 1px #707070;
+}
+.menu_bar .menu_page:last-of-type:after {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  border-right: solid 1px black;
+  content: "";
+}
+.menu_bar a.menu_page{
+  color: white;
+  line-height: 29px;
+}
+#pageCurrent {
+  color: #FFFF96;
+  background: rgb(00,00,00);
+  background: linear-gradient(0deg, black 77%, rgba(60,65,80,1) 100%);
+}
+.menu_bar a.menu_page:hover, .menu_bar #pageCurrent:hover {
+  color: turquoise;
+}
+.menu_bar a.menu_page:active, .menu_bar #pageCurrent:active {
+  color: greenyellow;
+}
+.drawer--right .drawer-hamburger, .drawer--right.drawer-open .drawer-hamburger {
+  background-color: transparent;
+}
+.drawer--right .drawer-hamburger {
+  visibility: hidden;
+}
+.drawer-hamburger {
+  position: absolute;
+}
+.drawer-nav {
+  right: 0;
+}
+.drawer-brand, .drawer-menu-item {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.drawer-menu-item {
+  padding: 0 .75rem;
+}
+.drawer-hamburger-icon:after {
+  top: 7px;
+}
+.drawer-hamburger-icon::before {
+  top: -7px;
+}
+.drawer-hamburger-icon, .drawer-hamburger-icon:after, .drawer-hamburger-icon:before {
+  background-color: white;
+}
+.drawer--right .drawer-hamburger, .drawer--right.drawer-open .drawer-hamburger {
+  background-color: transparent;
+}
+.drawer-hamburger {
+  height: -webkit-fill-available;
+  padding: 5px ;
+  width: 1.5rem;
+}
+.drawer-hamburger-icon {
+  margin-top: 0px;
+}
+/* ↓ スライドショー ↓ */
+/* ↑ スライドショー ↑ */
+/* ↓ お店詳細へ ↓ */
+.area_shop_appeal {
+  padding: 41px 149px 41px 128px;
+  background-color: #E3E2E0;
+}
+.area_shop_appeal .appeal_left, .area_shop_appeal .appeal_right {
+  flex: 1;
+}
+.area_shop_appeal .wrap_img {
+  margin-right: 70px;
+  width: 152px;
+}
+.area_shop_appeal .appeal_left .flex_box .wrap_item {
+  width: 100%;
+}
+.appeal_right .wrap_item {
+  width: 100%;
+}
+.area_shop_appeal .vertical_bar {
+  width: 2px;
+  height: 154px;
+  margin: 0px 41px ;
+  vertical-align: middle;
+  background-color: #C8C8C8;
+}
+.area_shop_appeal .flex_box {
+  flex: 1;
+}
+.wrap_item h2.text_title {
+  font-size: 28px;
+  margin-top: 12px;
+}
+.wrap_item .text_contents {
+  margin-top: 11px;
+  margin-bottom: 19px;
+}
+button.go_to_detal {
+  width: 150px;
+  height: 50px;
+  padding: 0;
+  color: white;
+  font-size: 28px;
+  background-color: #569CEC;
+  transition: all 0.5s;
+  float: right;
+}
+button.go_to_detal:hover {
+  opacity: 0.7;
+}
+/* ↑ お店詳細へ ↑ */
+/* ↓ 自転車画像沢山 ↓ */
+.area_images {
+  flex-wrap: wrap;
+  padding: 50px 55px;
+  font-size: 0%;
+  background-color: #F7F6F4;
+}
+/* .area_images .bike_image {
+  margin: 23px 23px;
+  width: calc((100% / 5) - 46px);
+}
+.area_images .bike_image img{
+  width: 100%;
+} */
+/* ↓ ホバー ↓ */
+.area_images .hover {
+  margin: 23px 23px;
+  width: calc((100% / 5) - 46px);
+  position: relative;
+  overflow: hidden;
+}
+.area_images .hover .bike_image {
+  width: 100%;
+}
+.hover .bike_image {
+  margin: 0;
+  padding: 0;
+}
+.bike_image img {
+  width: 100%;
+  height: 100%;
+}
+.hover .hover_text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /*topを-100%にして非表示*/
+  top: 100%;
+  left: 0;
+  color: #fff;
+  background-color: rgba(0,0,0,0.65);
+  /*ホバーの動き方*/
+  transition: .35s ease-in-out;
+}
+.hover .hover_text .text_1 {
+  font-size: 22px;
+  padding: 10px 20px;
+}
+.hover .hover_text .text_2 {
+  font-size: 16px;
+  padding: 0 20px;
+  text-align: right;
+}
+/*ホバーエフェクト*/
+.hover:hover .hover_text {
+  /*topを0にして上からスライド*/
+  top: 50%;
+}
+/* ↑ ホバー ↑ */
+/* ↓ 詳細の ↓モーダル ↓ */
+.modal_contents {
+  margin: 20px;
+}
+.wrap_item .modal_title {
+  font-size: 20px;
+}
+.wrap_item .modal_bike_number {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.wrap_item .modal_parts {
+  font-size: 14px;
+}
+.modal_contents .modal_wrap_img {
+  flex: 1;
+  margin-right: 20px;
+  width: 100%;
+}
+.modal_contents .wrap_item {
+  flex: 1;
+}
+.modal_contents {
+min-width: 640px;
+min-height: 320px;
+}
+/* ↑ 詳細のモーダル ↑ */
+
+/* ↑ 自転車画像沢山 ↑ */
+/* ↓ 自転車詳細 ↓ */
+.area_bike_detal {
+  position: relative;
+  padding: 65px 81px 144px 81px;
+}
+.area_bike_detal .bike_image{
+  max-width: 404px;
+  max-height: 404px;
+}
+.area_bike_detal h3.text_title{
+  margin: 0px 0px 0px 0px;
+  font-size: 63px;
+}
+.area_bike_detal .item_wrap .bike_image {
+  float: left;
+  margin: 0px 64px 0px 0px;
+}
+.area_bike_detal .item_wrap .bike_image:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.area_bike_detal .item_wrap .text_bike_number{
+  margin: 0px 0px 0px 0px;
+  font-size: 35px;
+}
+.area_bike_detal .item_wrap .text_contents{
+  margin: 32px 0px 0px 0px;
+}
+.area_bike_detal .text_contents_style{
+  font-size: 28px;
+  line-height: 42px;
+}
+/* ↑ 自転車詳細 ↑ */
+/* ↓ フッター ↓ */
+.area_shop_comment {
+  width: 100%;
+  padding: 35px 58px 35px 70px;
+  font-size: 28px;
+  background-color: #F7F6F4;
+}
+.area_shop_comment .area_image_logo {
+  margin: 0px 70px 0px 0px;
+}
+h4.text_contents {
+  font-size: 27px; /* 改行されてしまうのでしょうがなくフォント下げた */
+  line-height: 1.5;
+}
+.area_shop_comment .vertical_bar {
+  width: 2px;
+  height: 230px;
+  margin: 0px 35px;
+  background-color: #C8C8C8;
+}
+footer .footer_main {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 30px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  background-color: #000;
+}
+/* ↑ フッター ↑ */
+#pageTop {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  margin-right: 24px;
+  margin-bottom: 12px;
+}
+#pageTop a:hover {
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+#pageTop span.triangle_top {
+  margin-right: 6px;
+  color: #569CEC;
+}
+#pageTop a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+#cboxOverlay {
+  background: #000;
+}
+#cboxLoadedContent {
+  background: #fff;
+}
+#cboxLoadedContent {
+  padding: 0;
+  overflow: auto;
+  -moz-box-shadow: 0px 1px 10px #000000;
+  -webkit-box-shadow: 0px 1px 10px #000000;
+  box-shadow: 0px 1px 10px #000000;
+}
+#cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose , #cboxTitle {
+  top: -30px;
+}
+#colorbox, #cboxOverlay, #cboxWrapper {
+  overflow: visible ;
+}
+#cboxTitle {
+  color: #fff;
+}
+#ajax-wrap {/* ajaxを使用する時のみ */
+  margin: 20px;
+}
+/* レスポンシブ */
+@media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 991px) {
+  .area_shop_appeal {
+    padding: 20px 40px;
+  }
+  .area_shop_appeal .appeal_left .item_wrap {
+    margin: 5px 0 0 23px;
+  }
+  .appeal_left .item_wrap button.go_to_detal {
+    margin: 19px 0 0 140px;
+  }
+  button.go_to_detal {
+    width: 140px;
+    height: 45px;
+    font-size: 26px;
+  }
+  .area_shop_appeal .wrap_img {
+    width: 100px;
+  }
+  /* 画像沢山 */
+  .area_images .hover {
+    margin: 23px 23px;
+    width: calc((100% / 4) - 46px);
+  }
+  .area_images {
+    padding: 27px 27px;
+  }
+  /* バイク詳細 */
+  .area_bike_detal .text_contents_style {
+    font-size: 25px;
+    line-height: 42px;
+  }
+  .area_bike_detal {
+    padding: 50px;
+  }
+  .area_bike_detal .item_wrap .bike_image {
+    margin: 0px 45px 0px 0px;
+  }
+  .area_bike_detal h3.text_title {
+    font-size: 60px;
+  }
+  .area_bike_detal .item_wrap .text_bike_number {
+    font-size: 32px;
+  }
+  .area_bike_detal .text_contents_style {
+    font-size: 22px;
+  }
+  .area_bike_detal {
+    padding: 50px;
+  }
+  /* ヘッダー */
+  .area_shop_comment {
+    padding: 35px 47px;
+  }
+  .area_shop_comment .area_image_logo {
+    margin: 0px 63px 0px 0px;
+  }
+  h4.text_contents {
+    font-size: 20px;
+  }
+  .area_shop_comment .vertical_bar {
+    margin: 0px 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .area_shop_appeal {
+    padding: 20px 20px;
+  }
+  .item_wrap h2.text_title {
+    font-size: 22px;
+  }
+  .item_wrap .text_contents {
+    margin-top: 11px;
+    font-size: 17px;
+  }
+  .area_shop_appeal .appeal_left .item_wrap {
+    margin: 5px 0 0 23px;
+  }
+  .area_shop_appeal .flex_box .wrap_item {
+    width: 100%;
+  }
+  .area_shop_appeal .wrap_img {
+    margin-right: 10px;
+  }
+  .area_shop_appeal .wrap_img {
+    width: 70px;
+  }
+  .area_shop_appeal .vertical_bar {
+    height: 154px;
+    margin: 0px 14px;
+  }
+  .appeal_left .item_wrap button.go_to_detal {
+    margin: 19px 0 0 140px;
+  }
+  .appeal_left .item_wrap button.go_to_detal {
+    margin: 15px 0 0 90px;
+  }
+  .appeal_right .item_wrap button.go_to_detal {
+    margin: 15px 0 0 140px;
+  }
+  .wrap_item h2.text_title {
+    font-size: 16px;
+  }
+  .wrap_item .text_contents {
+    font-size: 12px;
+  }
+  button.go_to_detal {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+  }
+  /* 画像沢山 */
+  .area_images .hover {
+    margin: 17px 17px;
+    width: calc((100% / 3) - 34px);
+  }
+  .area_images {
+    padding: 3px 3px;
+  }
+  /* バイク詳細 */
+  .area_bike_detal .bike_image {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .area_bike_detal h3.text_title {
+    font-size: 50px;
+  }
+  .area_bike_detal .item_wrap .text_bike_number {
+    font-size: 28px;
+  }
+  .area_bike_detal .item_wrap .text_contents {
+    margin: 20px 0px 0px 0px;
+  }
+  .area_bike_detal .text_contents_style {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .area_bike_detal {
+    padding: 50px 0px 110px 50px;
+  }
+  .area_bike_detal .item_wrap .bike_image {
+    margin: 0px 30px 0px 0px;
+  }
+  .area_bike_detal {
+    padding: 20px 20px 70px 20px;
+  }
+  /* フッター */
+  .area_shop_comment {
+    padding: 30px 30px;
+  }
+  .area_shop_comment .area_image_logo {
+    margin: 0px 25px 0px 0px;
+  }
+  h4.text_contents {
+    font-size: 16px;
+  }
+  .area_shop_comment .vertical_bar {
+    margin: 0px 20px;
+    height: 150px;
+  }
+}
+/* スマホ */
+@media screen and (max-width: 479px) {
+  header div.menu_bar {
+    height: 45px;
+  }
+  header .header_main {
+    padding: 13px 20px;
+    background-color: #171721;
+  }
+  header div.menu_bar {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    padding-left: 3.2%;
+    /* padding-left: 40px; */
+    border-bottom: 2px solid black;
+    vertical-align: middle;
+    background: rgb(60,65,80);
+    background: linear-gradient(0deg, black 0%, rgba(60,65,80,1) 100%);
+  }
+  .drawer--right .drawer-hamburger {
+    visibility: initial;
+  }
+  .area_shop_appeal {
+    padding: 20px 15px;
+  }
+  .area_shop_appeal .wrap_img {
+    margin-right: 20px;
+    width: 77px;
+  }
+  header .header_main {
+    padding: 13px 20px;
+    background-color: #171721;
+  }
+  header div.menu_bar {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    padding-left: 3.2%;
+    /* padding-left: 40px; */
+    border-bottom: 2px solid black;
+    vertical-align: middle;
+    background: rgb(60,65,80);
+    background: linear-gradient(0deg, black 0%, rgba(60,65,80,1) 100%);
+  }
+  .drawer--right .drawer-hamburger {
+    visibility: initial;
+  }
+  .area_shop_appeal {
+    padding: 20px 15px;
+  }
+  .area_shop_appeal .wrap_img {
+    margin-right: 20px;
+    width: 77px;
+  }
+  header div.menu_bar {
+    padding-left: 0;
+  }
+  .menu_bar a.menu_page {
+    display: none;
+  }
+  .wrap_item h2.text_title {
+    font-size: 17px;
+    margin-top: 7px;
+  }
+  .wrap_item .text_contents {
+    margin-top: 7px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .area_shop_appeal .vertical_bar {
+    height: 154px;
+    margin: 0px 17px;
+  }
+  .area_images {
+    padding: 6px;
+  }
+  .contents.flex_box.area_shop_appeal {
+    display: block;
+    text-align: center;
+  }
+  .area_shop_appeal .wrap_img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .area_shop_appeal .vertical_bar {
+    height: 2px;
+    margin: 17px auto;
+    width: 70%;
+  }
+  .area_shop_appeal .flex_box {
+    -webkit-justify-content: center; justify-content: center; -ms-flex-pack: center;
+  }
+  button.go_to_detal {
+    float: none;
+  }
+  .area_images .hover {
+    margin: 12px 12px;
+    width: calc((100% / 3) - 24px);
+  }
+  .area_bike_detal {
+    padding: 20px 20px 70px 20px;
+  }
+  .area_bike_detal .item_wrap .bike_image {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  .area_bike_detal .bike_image {
+    max-width: 200px;
+  }
+  .area_bike_detal h3.text_title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .area_bike_detal .item_wrap .text_bike_number {
+    text-align: center;
+    font-size: 22px;
+  }
+  .area_bike_detal .item_wrap .text_contents {
+    margin: 10px 0px 0px 0px;
+  }
+  .area_bike_detal .text_contents_style {
+    font-size: 17px;
+    line-height: 30px;
+  }
+  #pageTop {
+    margin-right: 27px;
+  }
+  .clear_br {
+    display: none;
+  }
+  .area_shop_comment {
+    display: block;
+    text-align: center;
+  }
+  .area_shop_comment .area_image_logo img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .area_shop_comment .area_image_logo {
+    margin: 0
+  }
+  .area_shop_comment .vertical_bar {
+    height: 2px;
+    margin: 17px auto;
+    width: 70%;
+  }
+  .area_shop_comment .flex_box {
+    -webkit-justify-content: center; justify-content: center; -ms-flex-pack: center;
+  }
+  /* ↓ モーダル ↓ */
+  .modal_contents {
+    display: block;
+  }
+  .modal_contents .modal_wrap_img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .modal_contents .wrap_item h3.modal_title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  /* ↑ モーダル ↑ */
+}

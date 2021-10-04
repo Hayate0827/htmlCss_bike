@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.slick-dots {
+  bottom: 0px;
+}
+.slick-dots li button:before
+{
+    color: white;
+}
+.slick-dots li.slick-active button:before
+{
+    color: white;
+}
+ul.slider li {
+  margin-top: 0px;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0px;
+}
+.slider {
+  opacity: 0;
+  transition: opacity .3s linear;
+}
+.slider.slick-initialized{
+  opacity: 1;
+}
